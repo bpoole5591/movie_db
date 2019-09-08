@@ -1,0 +1,83 @@
+.header {
+  width: 100%;
+  height: auto;
+  background: #1c1c1c;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.my-list-button {
+  float: left;
+  position: absolute;
+  color: white;
+  padding: 2em;
+}
+
+.my-list-label {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.15em;
+}
+
+.header-title {
+  font-family: 'Comfortaa', cursive;
+  font-size: 2em;
+  color: white;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.header-title a,
+.header-title a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.header-content {
+  max-width: 1280px;
+  min-height: 120px;
+  height: auto;
+  padding: 20px 0 0 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.header-content2 {
+  max-width: 1280px;
+  min-height: 30px;
+  height: auto;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.logo {
+  width: 300px;
+  float: left;
+}
+
+.tmdb-logo {
+  width: 122px;
+  margin-top: 18px;
+  float: right;
+  display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+  .header-content {
+    max-width: 1280px;
+    min-height: 0px;
+  }
+
+  .tmdb-logo {
+    display: inline-block;
+    width: 80px;
+    margin-top: 0px;
+  }
+
+  .logo {
+    width: 150px;
+    margin-top: 5px;
+  }
+}

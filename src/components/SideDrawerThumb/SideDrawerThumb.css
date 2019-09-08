@@ -1,0 +1,45 @@
+.sidedrawerthumb {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 180px;
+  margin-left: 2.15em;
+}
+
+.sidedrawerthumb img {
+  width: 500px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+.sidedrawer-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-top: 6px;
+  margin-left: 65px;
+}
+
+.fa-minus {
+  color: maroon;
+  border: solid 4px maroon;
+  border-radius: 50px;
+  padding: 3px 4px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  opacity: 0.8;
+}
+
+.movie-title {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.15em;
+  padding-top: 5px;
+}
