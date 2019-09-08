@@ -7,10 +7,10 @@
 }
 
 .my-list-button {
-  float: left;
-  position: absolute;
+  float: right;
+  display: inline-block;
   color: white;
-  padding: 2em;
+  padding: 1em;
 }
 
 .my-list-label {

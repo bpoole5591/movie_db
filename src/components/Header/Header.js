@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SideDrawer from '../SideDrawer/SideDrawer';
 import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton';
-import tmdb_logo from '../../assets/tmdb_logo.png';
+// import tmdb_logo from '../../assets/tmdb_logo.png';
 import logo from '../../assets/tmcd_logo.png';
 import { Link } from 'react-router-dom';
 import './Header.css';
@@ -31,22 +31,6 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-        <div className="my-list-button">
-          <IconButton
-            aria-label="Menu"
-            color="inherit"
-            onClick={() => this.toggleDrawer(true)}
-          >
-            <MenuIcon />
-          </IconButton>
-          <span className="my-list-label">My Movie List</span>
-          <SideDrawer
-            open={this.state.drawerOpen}
-            onClose={value => this.toggleDrawer(value)}
-            myMovies={this.state.myMovies ? this.state.myMovies : []}
-            removeMovie={this.props.removeMovie}
-          />
-        </div>
         <div className="header-content">
           <div className="header-title">
             <Link to="/">
@@ -62,8 +46,21 @@ class Header extends Component {
               &nbsp;the Movie Collection Database
             </Link>
           </div>
-          <div className="tmdb-logo">
-            <img src={tmdb_logo} alt="tmdb-logo" />
+          <div className="my-list-button">
+            <IconButton
+              aria-label="Menu"
+              color="inherit"
+              onClick={() => this.toggleDrawer(true)}
+            >
+              <MenuIcon />
+            </IconButton>
+            <span className="my-list-label">My Movie List</span>
+            <SideDrawer
+              open={this.state.drawerOpen}
+              onClose={value => this.toggleDrawer(value)}
+              myMovies={this.state.myMovies ? this.state.myMovies : []}
+              removeMovie={this.props.removeMovie}
+            />
           </div>
         </div>
       </div>
